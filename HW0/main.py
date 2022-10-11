@@ -49,4 +49,5 @@ if __name__ == '__main__':
                         action='store_false')
     parser.add_argument('--logdir', type=str,
                         default='run/shared=True_LF=0.99_LR=0.01')
-    main(parser.parse_args())
+    args, unknown = parser.parse_known_args()
+    main(args)
